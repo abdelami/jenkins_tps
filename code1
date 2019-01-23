@@ -1,14 +1,14 @@
 node {
     
-    stage('step1'){
+    stage('Build'){
         echo "Fisrt step OK!"
         sh "ls -l"
     }
-    stage('step2'){
+    stage('Test'){
         sh "df -h"
         sh "env"
     }
-    stage('step3'){
+    stage('Deploy'){
         echo "Last step"
         sh "python --version"
     }
