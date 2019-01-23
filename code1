@@ -1,0 +1,16 @@
+node {
+    
+    stage('step1'){
+        echo "Fisrt step OK!"
+        sh "ls -l"
+    }
+    stage('step2'){
+        sh "df -h"
+        sh "env"
+    }
+    stage('step3'){
+        echo "Last step"
+        sh "python --version"
+    }
+
+}
